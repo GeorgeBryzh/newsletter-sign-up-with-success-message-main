@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: regular;
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+:root{
+    --dark-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --tomato: hsl(4, 100%, 67%);
+}
+body{
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sign-up{
+    &__header {
+            margin-top: 4rem;
+            font-family: 'Roboto';
+            font-size: 4rem;
+            font-weight: bold;
+            color: var(--dark-grey);
+            margin-bottom: 0;
+
+        }
+    
+    &__subheader {
+        margin-top: 1.5rem;
+        font-family: 'Roboto';
+        font-size: 1rem;
+        font-weight: regular;
+        color: var(--grey);
+        margin-bottom: 0;
+    }
+    &__benefits {
+        font-family: "Roboto";
+        font-size: 1rem;
+        font-weight: regular;
+        color: var(--dark-grey);
+        padding-inline-start: 28px;
+        list-style-image: url(../assets/images/icon-list.svg);
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+        line-height: 2.2em;
+    }
+
+    &__benefit {
+        padding-left: 0.5em;
+        padding-inline-top: 0em;
+    }
+    &__email-label{
+        font-family: 'Roboto';
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    &__email-error {
+        color: var(--tomato);
+    }
+    
+}
+
+
+
+
+
