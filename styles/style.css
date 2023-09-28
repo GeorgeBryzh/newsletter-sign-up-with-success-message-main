@@ -14,6 +14,95 @@
   --dark-grey: hsl(235, 18%, 26%);
   --grey: hsl(231, 7%, 60%);
   --tomato: hsl(4, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 body {
@@ -21,8 +110,25 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  padding: 2rem;
+  background: var(--dark-grey);
 }
 
+main {
+  background: var(--white);
+}
+
+.section {
+  display: flex;
+}
+
+.sign-up__left-col {
+  border: solid;
+}
+.sign-up__illustration {
+  border: solid;
+  background: url("../assets/images/illustration-sign-up-desktop.svg");
+}
 .sign-up__header {
   margin-top: 4rem;
   font-family: "Roboto";
@@ -61,4 +167,38 @@ body {
 }
 .sign-up__email-error {
   color: var(--tomato);
+  float: right;
+}
+.sign-up__email-input {
+  width: 100%;
+  display: block;
+  border: var(--grey) 1px solid;
+  border-radius: 10px;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: regular;
+  padding: 1.5em 1.5em;
+}
+.sign-up__email-input::-moz-placeholder {
+  color: var(--grey);
+}
+.sign-up__email-input::placeholder {
+  color: var(--grey);
+}
+.sign-up__email-input:focus {
+  outline: none;
+  outline: 0.15px solid;
+}
+.sign-up__email-input:hover {
+  outline: 0.15px dashed;
+}
+.sign-up__submit-button {
+  color: var(--white);
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1.5em 5em;
+  background-color: var(--dark-slate-grey);
+  border-radius: 10px;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
